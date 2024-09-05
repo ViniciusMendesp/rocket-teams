@@ -1,10 +1,10 @@
-import { Text } from "react-native";
+import { Header } from "@/components/Header";
 import * as S from "./styles";
 
 export function Groups() {
   return (
     <S.Container>
-      <S.Title>Groups</S.Title>
+      <Header />
     </S.Container>
   );
 }
