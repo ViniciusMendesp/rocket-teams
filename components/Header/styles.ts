@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { CaretLeft } from "phosphor-react-native";
+import { ChevronLeft } from "lucide-react-native";
 
 export const Container = styled.View`
   width: 100%;
@@ -13,4 +13,11 @@ export const Logo = styled.Image`
   height: 55px;
 `;
 
-export const BackIcon = styled(CaretLeft)``;
+export const BackButton = styled.TouchableOpacity`
+  flex: 1;
+`;
+
+export const BackIcon = styled(ChevronLeft).attrs(({}) => ({
+  color: "#fff",
+  size: 32,
+}))``;
