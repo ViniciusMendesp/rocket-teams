@@ -4,14 +4,12 @@ import {
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
 
-import { Groups } from "@/screens/Groups";
-
 import { Loading } from "@/components/Loading";
-import { NewGroup } from "@/screens/NewGroup";
-import { Players } from "@/screens/Players";
+
+import { Routes } from "@/routes";
 
 export default function Index() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
 
-  return <>{fontsLoaded ? <Players /> : <Loading />}</>;
+  return <>{fontsLoaded ? <Routes /> : <Loading />}</>;
 }
