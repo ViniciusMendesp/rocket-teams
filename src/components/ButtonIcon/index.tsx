@@ -13,7 +13,7 @@ export function ButtonIcon({
   ...rest
 }: ButtonIconProps) {
   return (
-    <S.Container>
+    <S.Container {...rest}>
       <S.Icon name={icon} type={type} />
     </S.Container>
   );
