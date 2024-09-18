@@ -37,7 +37,6 @@ export function Players() {
   const newPlayerNameInputRef = useRef<TextInput>(null);
 
   async function handleAddPlayer() {
-    console.log("silaallsas");
     if (newPlayerName.trim().length === 0) {
       return Alert.alert(
         "Nova pessoa",
