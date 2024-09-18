@@ -1,7 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import * as S from "./styles";
 import { useNavigation } from "@react-navigation/native";
-
 import { Header } from "@/components/Header";
 import { HighLight } from "@/components/HighLight";
 import { Button } from "@/components/Button";
@@ -9,6 +8,7 @@ import { Input } from "@/components/Input";
 import { groupCreate } from "@/storage/group/groupCreate";
 import { AppError } from "@/utils/AppError";
 import { Alert } from "react-native";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 export function NewGroup() {
   const [group, setGroup] = useState<string>("");
@@ -36,16 +36,26 @@ export function NewGroup() {
   return (
     <S.Container>
       <Header showBackButton />
-      <S.Content>
-        <S.Icon />
-        <HighLight
-          title="Nova turma"
-          subtitle="Crie a turma para adicionar pessoas"
-        />
-        <Input placeholder="Nome da turma" onChangeText={setGroup} />
+      <KeyboardAwareScrollView
+        contentContainerStyle={{ flexGrow: 1 }}
+        extraHeight={100}
+        enableOnAndroid={true}
+      >
+        <S.Content>
+          <S.Icon />
+          <HighLight
+            title="Nova turma"
+            subtitle="Crie a turma para adicionar pessoas"
+          />
+          <Input
+            placeholder="Nome da turma"
+            onChangeText={setGroup}
+            value={group}
+          />
 
-        <Button title="Criar" style={{ marginTop: 20 }} onPress={handleNew} />
-      </S.Content>
+          <Button title="Criar" style={{ marginTop: 20 }} onPress={handleNew} />
+        </S.Content>
+      </KeyboardAwareScrollView>
     </S.Container>
   );
 }
