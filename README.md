@@ -1,50 +1,26 @@
-# Welcome to your Expo app 👋
+# Rocket Teams 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto é uma aplicação móvel para criar turmas e organizar equipes para jogos. 
+Ele permite adicionar participantes às equipes Time A e Time B, além de possibilitar a exclusão de turmas e participantes. 
+A aplicação foi desenvolvida utilizando React Native e diversas tecnologias auxiliares, focando no armazenamento local, navegação e estilização com CSS-in-JS.
 
-## Get started
+## Tecnologias Utilizadas
 
-1. Install dependencies
+- React Native
+- CSS-in-JS (Styled Components)
+- Path Mapping
+- Navegação (React Navigation)
+- Armazenamento Local (AsyncStorage)
+- Fundamentos do React e React Native
 
-   ```bash
-   npm install
-   ```
+## Funcionalidades
 
-2. Start the app
+- Criar novas turmas para organizar jogos.
+- Adicionar participantes às turmas e organizá-los entre os times Time A e Time B.
+- Excluir participantes e remover turmas inteiras.
+- Armazenamento persistente de dados utilizando AsyncStorage para garantir que as turmas e participantes estejam salvos localmente.
+- Navegação eficiente entre as telas de criação e gestão de turmas.
 
-   ```bash
-    npx expo start
-   ```
+## Apresentação
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![{827CF215-6E93-47ED-8DFB-7CADD827AA29}](https://github.com/user-attachments/assets/f97be780-dd6a-404d-95a1-120fb794df27)
